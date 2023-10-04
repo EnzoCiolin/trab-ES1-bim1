@@ -1,0 +1,73 @@
+.OverlayNewPayContract{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.ContentNewPayContract{
+    min-width: 30rem;
+    border-radius: 6px;
+    padding: 2.5rem 3rem;
+    background: var(--gray-800);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.CloseButton{
+    position: absolute;
+    background: transparent;
+    border: 0cap;
+    top: 1.5rem;
+    right: 1.5rem;
+    line-height: 0;
+    cursor: pointer;
+    color: var(--gray-500);
+}
+
+.UploadContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.inputUpload{
+    display: none;
+}
+
+.labelUpload{
+    height: 200px;
+    width: 450px;
+    border-radius: 6px;
+    border: 1px dashed var(--green-300);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    &:hover{
+        border: 1px dashed var(--green-700);
+    }
+}
+
+.ButtonContainer{
+    display: flex;
+}
+
+.buttonSend{
+    width: 100%;
+    height: 3rem;
+    border-radius: 6px;
+    color: var(--white);
+    background-color: var(--green-500);
+    border: none;
+
+    &:hover{
+        background: var(--green-700);
+    }
+}

@@ -1,0 +1,95 @@
+.OverlayViewContract{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.ContentViewContract{
+    min-width: 60rem;
+    border-radius: 6px;
+    padding: 2.5rem 3rem;
+    background: var(--gray-800);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.CloseButton{
+    position: absolute;
+    background: transparent;
+    border: 0cap;
+    top: 1.5rem;
+    right: 1.5rem;
+    line-height: 0;
+    cursor: pointer;
+    color: var(--gray-500);
+}
+
+.spaceContainer{
+    padding: 1rem;
+}
+
+.viewContractContainer{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--dark-cyan-500);
+    border-radius: 5px;
+}
+
+.contractInfo{
+    width: 50%;
+    padding: 10px;
+    
+}
+
+.contractParagraph{
+    margin: 0;
+}
+
+.contractLabel{
+    font-weight: bold;
+}
+
+.statusContractParagraph{
+    
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    &::before{
+        content: "";
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background:var(--red-500);
+    }
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.buttonReport{
+    width: 100%;
+    background: var(--dark-cyan-500);
+    color: var(--white);
+    border: none;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover{
+        background: var(--dark-cyan-700);
+    }
+}
